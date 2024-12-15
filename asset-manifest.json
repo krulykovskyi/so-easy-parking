@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/so-easy-parking/static/css/main.fcbc3c69.css",
+    "main.js": "/so-easy-parking/static/js/main.1b1b0746.js",
+    "index.html": "/so-easy-parking/index.html",
+    "main.fcbc3c69.css.map": "/so-easy-parking/static/css/main.fcbc3c69.css.map",
+    "main.1b1b0746.js.map": "/so-easy-parking/static/js/main.1b1b0746.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcbc3c69.css",
+    "static/js/main.1b1b0746.js"
+  ]
+}
