@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardContent } from "./components/ui/Card";
 import Button from "./components/ui/button";
 import { ChevronRight, Star, PlayCircle, Car, ArrowRight } from "lucide-react";
+import { space } from "postcss/lib/list";
 
 const ParkingLanding = () => {
   return (
@@ -25,7 +26,7 @@ const ParkingLanding = () => {
                 href="#features"
                 className="text-gray-700 hover:text-orange-600"
               >
-                Особливості
+                Переваги
               </a>
             </li>
             <li>
@@ -54,26 +55,42 @@ const ParkingLanding = () => {
         className="pt-24 pb-12 bg-gradient-to-b from-orange-200 to-white"
       >
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="grid gap-8 items-center">
+            <div style={{ width: "63%", margin: "0 auto"}}>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
                 Легке паркування
               </h1>
               <p className="text-xl mb-8">
                 Курс з 6-ти уроків від жіночого автоінструктора з 23-річним
-                стажем водіння
+                стажем водіння. Навчіться паркуватись за <span style={{ fontWeight: "bold" }}>1 день</span>  - покроковий
+                метод доступний кожному!
               </p>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg rounded-lg">
-                Почати навчання
-                <ChevronRight className="ml-2" />
-              </Button>
-            </div>
-            <div>
-              <img
-                src="/api/placeholder/600/400"
-                alt="Паркування автомобіля"
-                className="rounded-lg shadow-lg"
-              />
+              <div className="flex">
+                <button
+                  className="bg-transperent text-white px-8 py-6 text-lg rounded-lg border"
+                  style={{
+                    border: "1px solid rgb(234, 88, 12)",
+                    marginRight: "10px",
+                    height: "60px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <a
+                    href="#about"
+                    className="text-gray-700 hover:text-orange-600"
+                    style={{ color: "rgb(234, 88, 12)" }}
+                  >
+                    Дізнатись більше
+                  </a>
+                </button>
+                <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg rounded-lg">
+                  Почати навчання
+                  <ChevronRight className="ml-2" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +102,7 @@ const ParkingLanding = () => {
 
           <div className="max-w-3xl mx-auto mb-12">
             <p className="text-lg mb-6">
-              Курс "Легке паркування" розроблений для тих, хто хоче впевнено та
+              Курс <i>"Легке паркування"</i> розроблений для тих, хто хоче впевнено та
               безпечно паркувати автомобіль у будь-якій ситуації. За 6 уроків ви
               опануєте всі основні види паркування та зможете без стресу
               знаходити місце для авто навіть у центрі міста в годину пік.
@@ -215,7 +232,7 @@ const ParkingLanding = () => {
       <section id="features" className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Особливості курсу
+            Переваги курсу
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card>

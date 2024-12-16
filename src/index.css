@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.lesson {
+    width: 48%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(152, 232, 185);
+    margin-bottom: 8px;
+}
