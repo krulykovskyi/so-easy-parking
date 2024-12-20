@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/so-easy-parking/static/css/main.828446a2.css",
-    "main.js": "/so-easy-parking/static/js/main.6f754f8e.js",
+    "main.css": "/so-easy-parking/static/css/main.f28a19bf.css",
+    "main.js": "/so-easy-parking/static/js/main.01e49204.js",
+    "static/media/mom_car.jpg": "/so-easy-parking/static/media/mom_car.0ed54153395e63695ade.jpg",
     "index.html": "/so-easy-parking/index.html",
-    "main.828446a2.css.map": "/so-easy-parking/static/css/main.828446a2.css.map",
-    "main.6f754f8e.js.map": "/so-easy-parking/static/js/main.6f754f8e.js.map"
+    "main.f28a19bf.css.map": "/so-easy-parking/static/css/main.f28a19bf.css.map",
+    "main.01e49204.js.map": "/so-easy-parking/static/js/main.01e49204.js.map"
   },
   "entrypoints": [
-    "static/css/main.828446a2.css",
-    "static/js/main.6f754f8e.js"
+    "static/css/main.f28a19bf.css",
+    "static/js/main.01e49204.js"
   ]
 }
