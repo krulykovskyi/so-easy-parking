@@ -11,10 +11,14 @@ const Hero = () => {
             <img src={photo} alt="driver" />
           </div>
           <div className="hero__text">
-            <h1 className="hero__title">Легке паркування</h1>
+            <h1 className="hero__title">
+              Легке паркування
+              <p className="hero__description0">
+                Зручне для всіх охочих, а особливо для жінок та дівчат!
+              </p>
+            </h1>
             <p className="hero__description">
-              Курс з 6-ти уроків від жіночого автоінструктора з 23-річним стажем
-              водіння.
+              КУРС з 7-ми УРОКІВ ВСЬОГО ЗА 379 ГРН
             </p>
             <p className="hero__description">
               Навчіться паркуватись за <span className="text-bold">1 день</span>{' '}

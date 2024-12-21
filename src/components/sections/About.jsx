@@ -7,82 +7,111 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about__container">
-        <h2 className="about__title">Про курс та його переваги</h2>
+        <h2 className="about__title">Про курс та його переваги:</h2>
 
-        <div className="max-w-3xl mx-auto mb-12">
+        <div className="max-w-4xl mx-auto mb-12">
           <p className="about__text">
-            Курс <i>"Легке паркування"</i> розроблений для тих, хто хоче
-            впевнено та безпечно паркувати автомобіль у будь-якій ситуації. За 6
-            уроків ви опануєте всі основні види паркування та зможете без стресу
-            знаходити місце для авто навіть у центрі міста в годину пік.
+            - Курс <i>"Легке паркування"</i> від професійного автоіструктора з
+            23-річним стажем водіння, таксиста, дальнобійника та приватного
+            водія. <br />
+            - Розроблений для всіх, хто хоче легко, впевнено та безпечно
+            паркувати автомобіль у будь-який спосіб. <br />
+            - Отримайте 7 уроків, збережіть в телефоні і паркуйтесь як
+            професіонал. <br />
+            - Кожен урок містить всього 2-3 дії. <br />
+            - Має відеодемонтстраціЇ (схеми, анімацію), чіткі орієнтири,
+            зрозуміле пояснення. <br />
+            - Цей курс збереже ваші час та нерви. <br />- Необмежений в часі
+            доступ до курсу.
           </p>
         </div>
 
         <div className="about__main-cards">
-          <Card className="bg-orange-50">
+          <Card className="about__main-card bg-orange-50">
             <CardContent className="features__card-content">
-              <h3 className="about__card-title">Паркування <span className='uppercase font-bold'>переднім ходом</span></h3>
+              <h3 className="about__card-title">
+                Паркування <span className="uppercase font-bold">передом</span>
+              </h3>
               <ul className="about__card-list">
                 <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
+                  <Car className="about__card-icon" />
                   <div>
-                    <p className="font-semibold">Пряма парковка передом</p>
+                    <p className="font-semibold">
+                      Пряма (під кутом 90 градусів) парковка передом
+                    </p>
                     <p className="about__card-description">
-                      Вивчите техніку швидкого паркування передом на місця під
+                      Вивчіть техніку швидкого паркування передом на місце під
                       прямим кутом
                     </p>
                   </div>
                 </li>
                 <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
+                  <Car className="about__card-icon" />
                   <div>
                     <p className="font-semibold">Коса парковка передом</p>
                     <p className="about__card-description">
-                      Навчитесь легко паркуватись під кутом на міських парковках
+                      Навчіться легко паркуватись під кутом (ялинкою) на міських
+                      парковках, а також безпечно виЇзджати з косоЇ парковки.
                     </p>
                   </div>
                 </li>
                 <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
+                  <Car className="about__card-icon" />
                   <div>
-                    <p className="font-semibold">
-                      Паркування в обмеженому просторі
-                    </p>
+                    <p className="font-semibold">Паралельна парковка передом</p>
                     <p className="about__card-description">
-                      Опануєте техніки маневрування в тісних дворах та підземних
-                      паркінгах
+                      Навчіться визначати достатній розмір паркомісця для заїзду
+                      передом. Також дізнайтесь як поправити, прижати до
+                      бордюра, легко переставити авто вліво або вправо в тісних
+                      умовах.
                     </p>
                   </div>
                 </li>
               </ul>
             </CardContent>
           </Card>
-          <Card className="bg-orange-50">
+          <Card className="about__main-card bg-orange-50">
             <CardContent className="features__card-content">
-              <h3 className="about__card-title">Паркування <span className='uppercase font-bold'>заднім ходом</span></h3>
+              <h3 className="about__card-title">
+                Паркування <span className="uppercase font-bold">задом</span>
+              </h3>
               <ul className="about__card-list">
                 <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
+                  <Car className="about__card-icon" />
                   <div>
-                    <p className="font-semibold">Пряма парковка задом</p>
+                    <p className="font-semibold">
+                      Пряма (під кутом 90 градусів) парковка задом (ближня)
+                    </p>
                     <p className="about__card-description">
-                      Навчитесь безпечно паркуватись між автомобілями під прямим
-                      кутом
+                      Навчіться безпечно паркуватись між автомобілями біля
+                      супермаркетів та ТРЦ під прямим кутом
                     </p>
                   </div>
                 </li>
                 <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
+                  <Car className="about__card-icon" />
                   <div>
-                    <p className="font-semibold">Паралельна парковка</p>
+                    <p className="font-semibold">
+                      Пряма (під кутом 90 градусів) парковка задом (дальня)
+                    </p>
                     <p className="about__card-description">
-                      Опануєте техніку паркування паралельно до бордюру між
-                      автомобілями
+                      Навчіться безпечно паркуватись між автомобілями біля
+                      супермаркетів та ТРЦ під прямим кутом здалеку.
                     </p>
                   </div>
                 </li>
                 <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
+                  <Car className="about__card-icon" />
+                  <div>
+                    <p className="font-semibold">Паралельна парковка задом</p>
+                    <p className="about__card-description">
+                      Опануйте техніку паркування в тісних умовах між
+                      автомобілями паралельно бордюру всього в 2 діЇ.
+                    </p>
+                  </div>
+                </li>
+                <li className="about__card-item">
+                  <Car className="about__card-icon" />
                   <div>
                     <p className="font-semibold">Коса парковка задом</p>
                     <p className="about__card-description">
@@ -116,7 +145,7 @@ const About = () => {
             <CardContent className="features__card-content">
               <h3 className="features__card-title">Практичні поради</h3>
               <p>
-                Корисні хитрощі та рекомендації від досвідченого інструктора
+                Корисні хитрощі та рекомендації від досвідченого автоінструктора
               </p>
             </CardContent>
           </Card>
@@ -145,7 +174,7 @@ const About = () => {
         </div>
 
         <Button size="lg" className="about__button">
-          Придбати програму
+          Придбати курс
           <ChevronRight className="ml-2" />
         </Button>
       </div>

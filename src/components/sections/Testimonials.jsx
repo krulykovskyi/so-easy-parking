@@ -13,22 +13,22 @@ const Testimonials = () => {
       <Container>
         <h2 className="testimonials__title">Відгуки учнів</h2>
         <div className="testimonials__wrapper">
-          <Card>
+          <Card className="testimonials__card">
             <img src={testimonial1} alt="testimonial" />
           </Card>
-          <Card>
+          <Card className="testimonials__card">
             <img src={testimonial2} alt="testimonial" />
           </Card>
-          <Card>
+          <Card className="testimonials__card">
             <img src={testimonial3} alt="testimonial" />
           </Card>
-          <Card>
+          <Card className="testimonials__card">
             <img src={testimonial4} alt="testimonial" />
           </Card>
-          <Card>
+          <Card className="testimonials__card">
             <img src={testimonial5} alt="testimonial" />
           </Card>
-          <Card>
+          <Card className="testimonials__card">
             <img src={testimonial6} alt="testimonial" />
           </Card>
         </div>

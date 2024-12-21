@@ -75,7 +75,7 @@ section {
 }
 
 .hero__text {
-  @apply px-4 pt-4;
+  @apply flex flex-col items-center px-4 pt-4;
 }
 
 .hero__title {
@@ -84,13 +84,18 @@ section {
   opacity: 0.8;
 }
 
+.hero__description0 {
+  @apply text-xl text-center italic px-8;
+  font-size: 1rem;
+}
+
 .hero__description {
-  @apply text-xl mb-8 px-8;
+  @apply text-xl text-center mb-8 px-8;
   font-size: 1.5rem;
 }
 
 .hero__buttons {
-  @apply flex gap-3 justify-center;
+  @apply flex gap-3 justify-center mt-4;
 }
 
 .button-lg {
@@ -125,7 +130,11 @@ section {
 }
 
 .testimonials__wrapper {
-  @apply flex gap-8;
+  @apply flex flex-wrap justify-center gap-8;
+}
+
+.testimonials__card {
+  @apply w-full max-w-[360px] overflow-hidden;
 }
 
 .testimonial-card__text {
@@ -155,11 +164,16 @@ section {
 }
 
 .about__text {
-  @apply text-lg mb-6;
+  @apply text-lg mb-3;
+  font-size: 1.4rem;
 }
 
 .about__main-cards {
   @apply flex justify-center gap-4 mb-4;
+}
+
+.about__main-card {
+  @apply w-full max-w-[650px];
 }
 
 .about__secondary-cards {
@@ -183,11 +197,12 @@ section {
 }
 
 .about__card-icon {
-  @apply mt-1 text-orange-600;
+  @apply mt-1 text-orange-600 w-4 h-4 flex-shrink-0;
 }
 
 .about__card-description {
   @apply text-gray-600;
+  font-size: 1.2rem;
 }
 
 .about__button {
@@ -250,4 +265,13 @@ section {
 
 .course-feature__description {
   @apply text-gray-600;
+}
+
+.pricing__price {
+  @apply text-4xl mb-4 mt-4 text-center;
+}
+
+.pricing__description {
+  @apply text-gray-600 mb-6 text-center;
+  font-size: 1.3rem;
 }
