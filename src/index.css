@@ -79,15 +79,14 @@ section {
 }
 
 .hero__title {
-    /* text transform uppercase */
   @apply text-4xl lg:text-5xl font-bold mb-6 text-center mb-24 uppercase;
   font-style: italic;
+  opacity: 0.8;
 }
 
 .hero__description {
   @apply text-xl mb-8 px-8;
   font-size: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero__buttons {
@@ -172,7 +171,7 @@ section {
 }
 
 .about__card-title {
-  @apply text-xl font-bold mb-4;
+  @apply text-xl mb-4;
 }
 
 .about__card-list {

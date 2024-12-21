@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about__container">
-        <h2 className="about__title">Про курс та переваги</h2>
+        <h2 className="about__title">Про курс та його переваги</h2>
 
         <div className="max-w-3xl mx-auto mb-12">
           <p className="about__text">
@@ -21,44 +21,7 @@ const About = () => {
         <div className="about__main-cards">
           <Card className="bg-orange-50">
             <CardContent className="features__card-content">
-              <h3 className="about__card-title">Паркування заднім ходом</h3>
-              <ul className="about__card-list">
-                <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
-                  <div>
-                    <p className="font-semibold">Пряма парковка задом</p>
-                    <p className="about__card-description">
-                      Навчитесь безпечно паркуватись між автомобілями під прямим
-                      кутом
-                    </p>
-                  </div>
-                </li>
-                <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
-                  <div>
-                    <p className="font-semibold">Паралельна парковка</p>
-                    <p className="about__card-description">
-                      Опануєте техніку паркування паралельно до бордюру між
-                      автомобілями
-                    </p>
-                  </div>
-                </li>
-                <li className="about__card-item">
-                  <Car className="about__card-icon" size={20} />
-                  <div>
-                    <p className="font-semibold">Коса парковка задом</p>
-                    <p className="about__card-description">
-                      Освоїте паркування під кутом 45° на парковках ТРЦ та
-                      супермаркетів
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card className="bg-orange-50">
-            <CardContent className="features__card-content">
-              <h3 className="about__card-title">Паркування переднім ходом</h3>
+              <h3 className="about__card-title">Паркування <span className='uppercase font-bold'>переднім ходом</span></h3>
               <ul className="about__card-list">
                 <li className="about__card-item">
                   <Car className="about__card-icon" size={20} />
@@ -88,6 +51,43 @@ const About = () => {
                     <p className="about__card-description">
                       Опануєте техніки маневрування в тісних дворах та підземних
                       паркінгах
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-orange-50">
+            <CardContent className="features__card-content">
+              <h3 className="about__card-title">Паркування <span className='uppercase font-bold'>заднім ходом</span></h3>
+              <ul className="about__card-list">
+                <li className="about__card-item">
+                  <Car className="about__card-icon" size={20} />
+                  <div>
+                    <p className="font-semibold">Пряма парковка задом</p>
+                    <p className="about__card-description">
+                      Навчитесь безпечно паркуватись між автомобілями під прямим
+                      кутом
+                    </p>
+                  </div>
+                </li>
+                <li className="about__card-item">
+                  <Car className="about__card-icon" size={20} />
+                  <div>
+                    <p className="font-semibold">Паралельна парковка</p>
+                    <p className="about__card-description">
+                      Опануєте техніку паркування паралельно до бордюру між
+                      автомобілями
+                    </p>
+                  </div>
+                </li>
+                <li className="about__card-item">
+                  <Car className="about__card-icon" size={20} />
+                  <div>
+                    <p className="font-semibold">Коса парковка задом</p>
+                    <p className="about__card-description">
+                      Освоїте паркування під кутом 45° на парковках ТРЦ та
+                      супермаркетів
                     </p>
                   </div>
                 </li>
