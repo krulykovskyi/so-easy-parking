@@ -10,4 +10,4 @@ const CourseFeature = ({ icon: Icon, title, description }) => {
   );
 };
 
-export default CourseFeature; 
+export default CourseFeature;

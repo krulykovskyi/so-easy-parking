@@ -2,230 +2,253 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: medium;
+body,
+html {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: medium;
 }
 
 section {
-    max-width: 1920px;
-    margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 /* variables*/
 :root {
-    --header-height: 57px;
+  --header-height: 57px;
 }
 
 /* Header */
 .header {
-    @apply fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b;
+  @apply fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b;
 }
 
 /* Navigation */
 .navigation {
-    @apply container mx-auto px-4 py-4;
+  @apply container mx-auto px-4 py-4;
 }
 
 .navigation__list {
-    @apply flex justify-center gap-8;
+  @apply flex justify-center gap-8;
 }
 
 .navigation__link {
-    @apply text-gray-700 hover:text-orange-600;
+  @apply text-gray-700 hover:text-orange-600;
 }
 
 /* Footer */
 .footer {
-    @apply bg-gray-100 py-8;
+  @apply bg-gray-100 py-8;
 }
 
 .footer__container {
-    @apply container mx-auto px-4;
+  @apply container mx-auto px-4;
 }
 
 .footer__text {
-    @apply text-center text-gray-600;
+  @apply text-center text-gray-600;
 }
 
 /* Hero Section */
 .hero {
-    @apply pb-16 pt-[var(--header-height)];
+  @apply pb-16 pt-[var(--header-height)];
 }
 
 .hero__container {
-    @apply flex flex-row bg-gradient-to-r from-primary-main to-white rounded-md;
-    align-items: center;
-    justify-content: center;
+  @apply flex flex-row bg-gradient-to-r from-primary-main to-white rounded-md;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    51.96% 51.96% at 48.08% 16.03%,
+    rgba(217, 132, 39, 0.65) 0%,
+    #ffffff 100%
+  );
 }
 
 .hero__photo {
-    max-width: 600px;
+  max-width: 600px;
 }
 
-.hero__photo>img {
-    @apply rounded-md;
+.hero__photo > img {
+  @apply rounded-md;
 }
 
 .hero__text {
-    @apply px-4 pt-4;
+  @apply px-4 pt-4;
 }
 
 .hero__title {
-    @apply text-4xl lg:text-5xl font-bold mb-6 ;
-    font-style: italic;
+    /* text transform uppercase */
+  @apply text-4xl lg:text-5xl font-bold mb-6 text-center mb-24 uppercase;
+  font-style: italic;
 }
 
 .hero__description {
-    @apply text-xl mb-8;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  @apply text-xl mb-8 px-8;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero__buttons {
-    @apply flex gap-3;
+  @apply flex gap-3 justify-center;
 }
 
 .button-lg {
-    @apply h-11 px-8 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2;
+  @apply h-11 px-8 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2;
 }
 
 /* Card */
 .card {
-    @apply rounded-lg border shadow-sm;
+  @apply rounded-lg border shadow-sm;
 }
 
 .card__content {
-    @apply p-6 pt-0;
+  @apply p-6 pt-0;
 }
 
 /* Общие классы */
 .container {
-    @apply mx-auto px-4;
-
+  @apply mx-auto px-4;
 }
 
 .text-bold {
-    @apply font-bold;
+  @apply font-bold;
 }
 
 /* Testimonials */
 .testimonials {
-    @apply py-16 bg-gray-50;
+  @apply py-16 bg-gray-50;
 }
 
 .testimonials__title {
-    @apply text-3xl font-bold mb-12 text-center;
+  @apply text-3xl font-bold mb-12 text-center;
 }
 
-.testimonials__grid {
-    @apply grid md:grid-cols-2 gap-8;
+.testimonials__wrapper {
+  @apply flex gap-8;
 }
 
 .testimonial-card__text {
-    @apply mb-4 text-gray-600;
+  @apply mb-4 text-gray-600;
 }
 
 .testimonial-card__name {
-    @apply font-semibold;
+  @apply font-semibold;
 }
 
 /* About Section */
 .about {
-    @apply py-16 bg-white;
+  @apply py-16 bg-white;
+  background: radial-gradient(
+    110.02% 332.09% at 93.86% 102.12%,
+    rgba(217, 132, 39, 0.65) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .about__container {
-    @apply container;
+  @apply container flex flex-col items-center;
 }
 
 .about__title {
-    @apply text-3xl font-bold mb-8 text-center;
+  @apply text-3xl font-bold mb-8 text-center;
 }
 
 .about__text {
-    @apply text-lg mb-6;
+  @apply text-lg mb-6;
 }
 
-.about__grid {
-    @apply grid md:grid-cols-2 gap-8 mb-12;
+.about__main-cards {
+  @apply flex justify-center gap-4 mb-4;
+}
+
+.about__secondary-cards {
+  @apply flex flex-row flex-wrap justify-center gap-3;
+}
+
+.about__secondary-card {
+  @apply max-w-[430px] min-w-[340px] w-[430px];
 }
 
 .about__card-title {
-    @apply text-xl font-bold mb-4;
+  @apply text-xl font-bold mb-4;
 }
 
 .about__card-list {
-    @apply space-y-4;
+  @apply space-y-4;
 }
 
 .about__card-item {
-    @apply flex items-start gap-3;
+  @apply flex items-start gap-3;
 }
 
 .about__card-icon {
-    @apply mt-1 text-orange-600;
+  @apply mt-1 text-orange-600;
 }
 
 .about__card-description {
-    @apply text-gray-600;
+  @apply text-gray-600;
+}
+
+.about__button {
+  @apply mt-4;
 }
 
 /* Features Section */
 .features {
-    @apply py-16;
+  @apply py-16;
 }
 
 .features__container {
-    @apply container;
+  @apply container;
 }
 
 .features__grid {
-    @apply grid md:grid-cols-2 gap-8;
+  @apply grid md:grid-cols-2 gap-8;
 }
 
 .features__card {
-    @apply rounded-lg border shadow-sm;
+  @apply rounded-lg border shadow-sm;
 }
 
 .features__card-content {
-    @apply pt-6;
+  @apply pt-6;
 }
 
 .features__card-title {
-    @apply text-xl font-bold mb-4;
+  @apply text-xl font-bold mb-4;
 }
 
 .features__card-list {
-    @apply space-y-4;
+  @apply space-y-4;
 }
 
 .features__card-item {
-    @apply flex items-start gap-3;
+  @apply flex items-start gap-3;
 }
 
 .features__card-icon {
-    @apply mt-1 text-orange-600;
+  @apply mt-1 text-orange-600;
 }
 
 .features__card-description {
-    @apply text-gray-600;
+  @apply text-gray-600;
 }
 
 /* CourseFeature */
 .course-feature {
-    @apply flex items-start gap-3;
+  @apply flex items-start gap-3;
 }
 
 .course-feature__icon {
-    @apply mt-1 text-orange-600;
+  @apply mt-1 text-orange-600;
 }
 
 .course-feature__title {
-    @apply font-semibold;
+  @apply font-semibold;
 }
 
 .course-feature__description {
-    @apply text-gray-600;
+  @apply text-gray-600;
 }

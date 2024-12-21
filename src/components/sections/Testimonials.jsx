@@ -1,27 +1,35 @@
 import Container from '../ui/Container';
 import { Card, CardContent } from '../ui/Card';
+import testimonial1 from '../../assets/testimonial1.jpg';
+import testimonial2 from '../../assets/testimonial2.jpg';
+import testimonial3 from '../../assets/testimonial3.jpg';
+import testimonial4 from '../../assets/testimonial4.jpg';
+import testimonial5 from '../../assets/testimonial5.jpg';
+import testimonial6 from '../../assets/testimonial6.jpg';
 
 const Testimonials = () => {
   return (
     <section id="testimonials" className="testimonials">
       <Container>
         <h2 className="testimonials__title">Відгуки учнів</h2>
-        <div className="testimonials__grid">
+        <div className="testimonials__wrapper">
           <Card>
-            <CardContent className="pt-6">
-              <p className="testimonial-card__text">
-                "Дуже задоволена курсом! Тепер я можу спокійно припаркуватися в будь-якому місці."
-              </p>
-              <p className="testimonial-card__name">Олена К.</p>
-            </CardContent>
+            <img src={testimonial1} alt="testimonial" />
           </Card>
           <Card>
-            <CardContent className="pt-6">
-              <p className="testimonial-card__text">
-                "Найкращі інвестиції в своє водійське майбутнє. Дякую за чудовий курс!"
-              </p>
-              <p className="testimonial-card__name">Марія П.</p>
-            </CardContent>
+            <img src={testimonial2} alt="testimonial" />
+          </Card>
+          <Card>
+            <img src={testimonial3} alt="testimonial" />
+          </Card>
+          <Card>
+            <img src={testimonial4} alt="testimonial" />
+          </Card>
+          <Card>
+            <img src={testimonial5} alt="testimonial" />
+          </Card>
+          <Card>
+            <img src={testimonial6} alt="testimonial" />
           </Card>
         </div>
       </Container>
@@ -29,4 +37,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials; 
+export default Testimonials;

@@ -17,4 +17,4 @@ const TestimonialCard = ({ name, text, rating }) => {
   );
 };
 
-export default TestimonialCard; 
+export default TestimonialCard;
