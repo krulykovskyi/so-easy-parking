@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/so-easy-parking/static/css/main.4b5bff08.css",
-    "main.js": "/so-easy-parking/static/js/main.fb0c5e19.js",
+    "main.css": "/so-easy-parking/static/css/main.155995b3.css",
+    "main.js": "/so-easy-parking/static/js/main.85dc9d0a.js",
+    "static/media/testimonial3.jpg": "/so-easy-parking/static/media/testimonial3.0d473c6ed4b853ff36df.jpg",
+    "static/media/testimonial1.jpg": "/so-easy-parking/static/media/testimonial1.9a7e2cf39aee4b5bfdf9.jpg",
+    "static/media/testimonial2.jpg": "/so-easy-parking/static/media/testimonial2.c4e2bb3720f71b48a179.jpg",
     "static/media/mom_car.jpg": "/so-easy-parking/static/media/mom_car.0ed54153395e63695ade.jpg",
-    "static/media/testimonial1.jpg": "/so-easy-parking/static/media/testimonial1.ed97458f16b05b83e5da.jpg",
-    "static/media/testimonial3.jpg": "/so-easy-parking/static/media/testimonial3.9e03980c9337434572d9.jpg",
-    "static/media/testimonial4.jpg": "/so-easy-parking/static/media/testimonial4.0eb0b3f382085cde79af.jpg",
-    "static/media/testimonial2.jpg": "/so-easy-parking/static/media/testimonial2.ce045cdbb678c20e2576.jpg",
-    "static/media/testimonial5.jpg": "/so-easy-parking/static/media/testimonial5.b0aa52be507634cac8e2.jpg",
-    "static/media/testimonial6.jpg": "/so-easy-parking/static/media/testimonial6.20c815d7e2b6bd536015.jpg",
+    "static/media/testimonial4.jpg": "/so-easy-parking/static/media/testimonial4.d245e696ca16280b9607.jpg",
+    "static/media/testimonial6.jpg": "/so-easy-parking/static/media/testimonial6.f7515f33e3a6da9572c1.jpg",
+    "static/media/testimonial5.jpg": "/so-easy-parking/static/media/testimonial5.2b74cb218a5335ec6c74.jpg",
     "index.html": "/so-easy-parking/index.html",
-    "main.4b5bff08.css.map": "/so-easy-parking/static/css/main.4b5bff08.css.map",
-    "main.fb0c5e19.js.map": "/so-easy-parking/static/js/main.fb0c5e19.js.map"
+    "main.155995b3.css.map": "/so-easy-parking/static/css/main.155995b3.css.map",
+    "main.85dc9d0a.js.map": "/so-easy-parking/static/js/main.85dc9d0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b5bff08.css",
-    "static/js/main.fb0c5e19.js"
+    "static/css/main.155995b3.css",
+    "static/js/main.85dc9d0a.js"
   ]
 }
