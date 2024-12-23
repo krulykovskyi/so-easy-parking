@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/so-easy-parking/static/css/main.cd8df26f.css",
-    "main.js": "/so-easy-parking/static/js/main.49f3a92b.js",
+    "main.css": "/so-easy-parking/static/css/main.25720940.css",
+    "main.js": "/so-easy-parking/static/js/main.7b15a0dd.js",
     "static/media/testimonial3.jpg": "/so-easy-parking/static/media/testimonial3.0d473c6ed4b853ff36df.jpg",
     "static/media/testimonial1.jpg": "/so-easy-parking/static/media/testimonial1.9a7e2cf39aee4b5bfdf9.jpg",
     "static/media/testimonial2.jpg": "/so-easy-parking/static/media/testimonial2.c4e2bb3720f71b48a179.jpg",
@@ -9,12 +9,15 @@
     "static/media/testimonial4.jpg": "/so-easy-parking/static/media/testimonial4.d245e696ca16280b9607.jpg",
     "static/media/testimonial6.jpg": "/so-easy-parking/static/media/testimonial6.f7515f33e3a6da9572c1.jpg",
     "static/media/testimonial5.jpg": "/so-easy-parking/static/media/testimonial5.2b74cb218a5335ec6c74.jpg",
+    "static/media/revicons.eot": "/so-easy-parking/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/so-easy-parking/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/so-easy-parking/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/so-easy-parking/index.html",
-    "main.cd8df26f.css.map": "/so-easy-parking/static/css/main.cd8df26f.css.map",
-    "main.49f3a92b.js.map": "/so-easy-parking/static/js/main.49f3a92b.js.map"
+    "main.25720940.css.map": "/so-easy-parking/static/css/main.25720940.css.map",
+    "main.7b15a0dd.js.map": "/so-easy-parking/static/js/main.7b15a0dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd8df26f.css",
-    "static/js/main.49f3a92b.js"
+    "static/css/main.25720940.css",
+    "static/js/main.7b15a0dd.js"
   ]
 }
