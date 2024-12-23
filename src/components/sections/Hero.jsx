@@ -21,7 +21,7 @@ const Hero = () => {
               КУРС з 7-ми УРОКІВ ВСЬОГО ЗА 379 ГРН
             </p>
             <p className="hero__description">
-              Навчіться паркуватись за <span className="text-bold">1 день</span>{' '}
+              Навчіться паркуватись за <span className="font-bold">1 день</span>{' '}
               - покроковий метод доступний кожному!
             </p>
             <div className="hero__buttons">

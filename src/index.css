@@ -16,26 +16,101 @@ section {
 }
 /* variables*/
 :root {
-  --header-height: 57px;
+  --header-height: 47px;
 }
 
-/* Header */
+/*#region General*/
 .header {
-  @apply fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b;
+  @apply
+    fixed top-0
+    left-0 right-0 z-50
+    bg-white/80
+    backdrop-blur-sm
+    h-[var(--header-height)];
 }
 
-/* Navigation */
 .navigation {
-  @apply container mx-auto px-4 py-4;
+  @apply flex justify-center items-center h-full w-full mx-auto;
 }
-
 .navigation__list {
-  @apply flex justify-center gap-8;
+  @apply flex items-center gap-6 justify-end;
+}
+.navigation__link {
+  @apply relative py-1;
+}
+.navigation__link::after {
+  content: '';
+  @apply absolute bottom-[-9px] left-0 w-0 h-0.5 bg-primary-main transition-all duration-300;
+}
+.navigation__link.active::after {
+  @apply w-full;
 }
 
-.navigation__link {
-  @apply text-gray-700 hover:text-orange-600;
+.hero {
+  @apply pb-16 pt-[var(--header-height)];
 }
+.hero__container {
+  @apply flex flex-row bg-gradient-to-r from-primary-main to-white rounded-md;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    51.96% 51.96% at 48.08% 16.03%,
+    rgba(217, 132, 39, 0.65) 0%,
+    #ffffff 100%
+  );
+}
+.hero__photo {
+  max-width: 600px;
+}
+.hero__photo > img {
+  @apply rounded-md;
+}
+.hero__text {
+  @apply flex flex-col items-center px-4 pt-4;
+}
+.hero__title {
+  @apply text-4xl lg:text-5xl font-bold mb-6 text-center mb-24 uppercase;
+  font-style: italic;
+  opacity: 0.8;
+}
+.hero__description0 {
+  @apply text-xl text-center italic px-8;
+  font-size: 1rem;
+}
+.hero__description {
+  @apply text-xl text-center mb-8 px-8;
+  font-size: 1.5rem;
+}
+.hero__buttons {
+  @apply flex gap-3 justify-center mt-4;
+}
+/* #endregion */
+
+/*#region sm (640px - 767px)*/
+@screen sm {
+  .navigation {
+    @apply px-4;
+  }
+  .navigation__list {
+    @apply gap-8;
+  }
+}
+/* #endregion */
+
+/*#region md (768px - 959px)*/
+@screen md {
+}
+/* #endregion */
+
+/*#region lg (960px - 1199px)*/
+@screen lg {
+}
+/* #endregion */
+
+/*#region xl (>= 1200px)*/
+@screen xl {
+}
+/* #endregion */
 
 /* Footer */
 .footer {
@@ -51,52 +126,6 @@ section {
 }
 
 /* Hero Section */
-.hero {
-  @apply pb-16 pt-[var(--header-height)];
-}
-
-.hero__container {
-  @apply flex flex-row bg-gradient-to-r from-primary-main to-white rounded-md;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(
-    51.96% 51.96% at 48.08% 16.03%,
-    rgba(217, 132, 39, 0.65) 0%,
-    #ffffff 100%
-  );
-}
-
-.hero__photo {
-  max-width: 600px;
-}
-
-.hero__photo > img {
-  @apply rounded-md;
-}
-
-.hero__text {
-  @apply flex flex-col items-center px-4 pt-4;
-}
-
-.hero__title {
-  @apply text-4xl lg:text-5xl font-bold mb-6 text-center mb-24 uppercase;
-  font-style: italic;
-  opacity: 0.8;
-}
-
-.hero__description0 {
-  @apply text-xl text-center italic px-8;
-  font-size: 1rem;
-}
-
-.hero__description {
-  @apply text-xl text-center mb-8 px-8;
-  font-size: 1.5rem;
-}
-
-.hero__buttons {
-  @apply flex gap-3 justify-center mt-4;
-}
 
 .button-lg {
   @apply h-11 px-8 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2;
@@ -116,10 +145,6 @@ section {
   @apply mx-auto px-4;
 }
 
-.text-bold {
-  @apply font-bold;
-}
-
 /* Testimonials */
 .testimonials {
   @apply py-16 bg-gray-50;
@@ -127,22 +152,6 @@ section {
 
 .testimonials__title {
   @apply text-3xl font-bold mb-12 text-center;
-}
-
-.testimonials__wrapper {
-  @apply flex flex-wrap justify-center gap-8;
-}
-
-.testimonials__card {
-  @apply w-full max-w-[360px] overflow-hidden;
-}
-
-.testimonial-card__text {
-  @apply mb-4 text-gray-600;
-}
-
-.testimonial-card__name {
-  @apply font-semibold;
 }
 
 /* About Section */
@@ -250,21 +259,8 @@ section {
   @apply text-gray-600;
 }
 
-/* CourseFeature */
-.course-feature {
-  @apply flex items-start gap-3;
-}
-
-.course-feature__icon {
-  @apply mt-1 text-orange-600;
-}
-
-.course-feature__title {
-  @apply font-semibold;
-}
-
-.course-feature__description {
-  @apply text-gray-600;
+.testimonials__container {
+  @apply max-w-[1200px];
 }
 
 .pricing__price {
